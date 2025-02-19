@@ -1,0 +1,68 @@
+/* Nastavení základního stylu stránky */
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(135deg, #f8e8ee, #f6d5e0);
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Kontejner se zprávou */
+.container {
+    max-width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Titulek */
+.title {
+    font-family: 'Playfair Display', serif;
+    color: #b71c1c;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+/* Rámeček pro tajnou zprávu */
+.message-box {
+    background: #fff5f8;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.message-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tajná zpráva - výchozí skrytý stav */
+.hidden-message {
+    color: white;
+    background-color: white;
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-weight: bold;
+    transition: color 0.5s ease-in-out;
+}
+
+/* Efekt odhalení zprávy */
+.hidden-message.revealed {
+    color: #b71c1c;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+/* Jemná animace při načtení */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
