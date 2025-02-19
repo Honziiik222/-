@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osobní vzkaz 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">🌹 Pro někoho výjimečného 🌹</h1>
+        <div class="message-box" onclick="revealMessage()">
+            <p class="hidden-message" id="secretMessage">
+                Miláčku,<br>
+                někdy slova nestačí k tomu, abych vyjádřil, jak moc tě miluji. ❤️<br>
+                Jsi moje světlo v temnotě, můj smích ve smutku a můj klid v chaosu. 🕊️<br>
+                Každý den s tebou je dar, který si nesmírně vážím. <br>
+                Tvůj navždy, Honzíík. 💖
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function revealMessage() {
+            document.getElementById("secretMessage").classList.toggle("revealed");
+        }
+    </script>
+
+</body>
+</html>
